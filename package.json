@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "trunk": "trunk serve",
+    "tailwind": "tailwindcss -i ./tailwind.pcss -o ./output.css --watch",
+    "start": "concurrently \"npm run trunk\" \"npm run tailwindcss\""
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "concurrently": "^8.0.1",
+    "daisyui": "^2.51.5",
+    "tailwindcss": "^3.3.1"
+  }
+}
