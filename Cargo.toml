@@ -5,6 +5,10 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name="router"
+path="src/router/lib.rs"
+
 [dependencies]
 gloo-storage = "0.2.2"
 serde = "1.0.160"
