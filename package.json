@@ -1,7 +1,7 @@
 {
   "scripts": {
     "trunk": "trunk serve",
-    "tailwind": "tailwindcss -i ./tailwind.pcss -o ./output.css",
+    "tailwind": "tailwindcss -i tailwind.pcss -o output.css --watch",
     "start": "concurrently \"npm run trunk\" \"npm run tailwindcss\""
   },
   "devDependencies": {

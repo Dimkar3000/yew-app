@@ -1,0 +1,13 @@
+[package]
+name = "yew-app-route-index"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew-app-services = { path="../../services" }
+yew-app-entities = { path = "../../entities" }
+
+yew = { workspace=true }
+yew-router = { workspace=true }

@@ -1,0 +1,10 @@
+[package]
+name = "yew-app-services"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew-app-entities = { path="../entities" }
+gloo-storage = { workspace=true }
+serde = { workspace=true }
+yew = { workspace=true }

@@ -31,9 +31,9 @@ checksum = "cfa8873f51c92e232f9bac4065cddef41b714152812bfc5f7672ba16d6ef8cd9"
 
 [[package]]
 name = "bumpalo"
-version = "3.12.0"
+version = "3.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0d261e256854913907f67ed06efbc3338dfe6179796deefc1ff763fc1aee5535"
+checksum = "9b1ce199063694f33ffb7dd4e0ee620741495c32833cde5aa08f02a0bf96f0c8"
 
 [[package]]
 name = "cfg-if"
@@ -356,9 +356,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.141"
+version = "0.2.142"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3304a64d199bb964be99741b7a14d26972741915b3649639149b2479bb46f4b5"
+checksum = "6a987beff54b60ffa6d51982e1aa1146bc42f19bd26be28b0586f252fccf5317"
 
 [[package]]
 name = "log"
@@ -869,9 +869,72 @@ dependencies = [
 name = "yew-app"
 version = "0.1.0"
 dependencies = [
+ "web-sys",
+ "yew",
+ "yew-app-entities",
+ "yew-app-router",
+ "yew-router",
+]
+
+[[package]]
+name = "yew-app-counter-demo"
+version = "0.1.0"
+dependencies = [
+ "yew",
+ "yew-app-entities",
+ "yew-router",
+]
+
+[[package]]
+name = "yew-app-entities"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "yew",
+ "yew-router",
+]
+
+[[package]]
+name = "yew-app-route-index"
+version = "0.1.0"
+dependencies = [
+ "yew",
+ "yew-app-entities",
+ "yew-app-services",
+ "yew-router",
+]
+
+[[package]]
+name = "yew-app-router"
+version = "0.1.0"
+dependencies = [
+ "yew",
+ "yew-app-counter-demo",
+ "yew-app-entities",
+ "yew-app-route-index",
+ "yew-app-services",
+ "yew-app-todo-demo",
+ "yew-router",
+]
+
+[[package]]
+name = "yew-app-services"
+version = "0.1.0"
+dependencies = [
  "gloo-storage",
  "serde",
  "yew",
+ "yew-app-entities",
+]
+
+[[package]]
+name = "yew-app-todo-demo"
+version = "0.1.0"
+dependencies = [
+ "web-sys",
+ "yew",
+ "yew-app-entities",
+ "yew-app-services",
  "yew-router",
 ]
 
